@@ -1,0 +1,45 @@
+0.032   2019-08-22  Released-By: PERLANCAR; Urgency: medium
+
+        - [bugfix] Properly refuse to create reverse rules for create_hash_key
+	  when ignore=1/replace=1, for rename_hash_key when
+	  ignore_missing_from=1/ignore_existing_target=1/replace=1.
+
+	- [test] Add reverse tests.
+
+
+0.031   2019-08-22  Released-By: PERLANCAR; Urgency: medium
+
+	- Rule transmute_array_elems: add arguments index_{is,in,match,filter}.
+
+	- Rule transmute_hash_values: add arguments key_{is,in,match,filter}.
+
+	- Add & tweak documentation.
+
+
+0.030   2019-07-24  Released-By: PERLANCAR; Urgency: medium; Backward-Compatible: no
+
+	[INCOMPATIBLE CHANGE]
+
+        - Merge transmute_array() and transmute_hash() into a single function
+          transmute_data().
+
+        - Rename rules: {create,rename,delete}_key ->
+          {create,rename,delete}_hash_key.
+
+        [NEW FEATURES]
+
+        - Provide reverse_rules() to produce the reverse of rules.
+
+        - New rules: transmute_array_elems, transmute_hash_values.
+
+
+0.02    2015-05-05  Released-By: PERLANCAR
+
+	- No functional changes.
+
+	- Fix example in Synopsis.
+
+
+0.01     2015-05-05  Released-By: PERLANCAR
+
+         - First release.
